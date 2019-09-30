@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="RegressionSuite">
+	<listeners>
+		<listener class-name="CoreUtils.TestListener" />
+	</listeners>
+	<test name="OrderTest">
+		<classes>
+			<class name="OrderPlaceTests.testsElectronicOrders" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="TodaysDeals">
+		<classes>
+			<class name="OrderPlaceTests.testTodaysDeals" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
